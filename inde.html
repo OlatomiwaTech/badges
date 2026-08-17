@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo HTML with CDN</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- Alpine.js CDN -->
+    <script defer src="https://jsdelivr.net"></script>
+</link>
+</head>
+<body class="bg-light p-5">
+
+    <div class="container text-center">
+        <h1 class="text-primary font-bold text-3xl mb-4">Hello World</h1>
+        <p class="text-secondary text-lg">This page uses Bootstrap and Tailwind via CDN.</p>
+        
+        <!-- Alpine.js Interactive Demo -->
+        <div x-data="{ count: 0 }" class="mt-4">
+            <button @click="count++" class="btn btn-success">
+                Click Count: <span x-text="count"></span>
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
