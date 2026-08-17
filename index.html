@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN Demo 2</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        body { font-family: 'Inter', sans-serif; text-align: center; padding: 50px; background: #f3f4f6; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block; }
+        .btn { background: #3b82f6; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1><i class="fa-solid fa-wand-magic-sparkles text-primary"></i> UI Demo</h1>
+        <p>This layout uses Google Fonts, Font Awesome, and jQuery.</p>
+        <button id="toggle-btn" class="btn">Click to Fade Text</button>
+        <p id="target-text" style="margin-top: 15px; color: #6b7280;">Watch me disappear!</p>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://jquery.com"></script>
+    <script>
+        $(document).ready(function(){
+            $("#toggle-btn").click(function(){
+                $("#target-text").fadeToggle();
+            });
+        });
+    </script>
+</body>
+</html>
